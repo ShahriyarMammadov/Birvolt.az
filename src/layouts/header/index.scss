@@ -1,0 +1,42 @@
+header {
+    padding: 20px 15px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo {
+            a {
+                color: black;
+            }
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #121d1d;
+            padding: 15px 40px;
+            border-radius: 50px;
+
+            a {
+                color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 15px;
+            }
+        }
+
+        .contactOur {
+            a {
+                padding: 10px 15px;
+                background-color: #121d1d;
+                color: white;
+            }
+        }
+    }
+}
