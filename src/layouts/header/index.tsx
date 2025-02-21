@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.scss";
 import { Link } from "react-router-dom";
+import logo from "../../../public/logo.png";
 
 const Header: React.FC = () => {
   return (
@@ -8,7 +9,8 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="logo">
           <Link to={"/"}>
-            <h3>Birvolt.az</h3>
+            {/* <h3>Birvolt.az</h3> */}
+            <img src={logo} />
           </Link>
         </div>
 

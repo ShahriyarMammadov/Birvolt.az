@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./index.scss";
 import chargeImage from "../../assets/section_1_chargeImage.jpg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import useTriggeredCountUp from "../../components/triggerCountUp";
 
 const persons = [
   {
@@ -19,11 +22,31 @@ const persons = [
 ];
 
 const HomePage: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+
+    window.addEventListener("resize", () => {
+      AOS.refresh();
+    });
+
+    return () => {
+      window.removeEventListener("resize", () => {
+        AOS.refresh();
+      });
+    };
+  }, []);
+
+  const ref = useRef(null);
+
+  const countUp = useTriggeredCountUp(ref, 250, 4000);
+
   return (
     <div id="homePage">
       <section id="section1">
         <div className="container">
-          <div className="left">
+          <div className="left" data-aos="fade-up">
             <h1>Eco Friendly For Electric Car</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -32,12 +55,12 @@ const HomePage: React.FC = () => {
           </div>
 
           <div className="right">
-            <div className="hero">
-              <img src={chargeImage} alt="" />
+            <div className="hero" data-aos="fade-up" data-aos-duration="1000">
+              <img src={chargeImage} alt="birvolt" />
             </div>
 
-            <div className="right_content">
-              <h4>250K+</h4>
+            <div className="right_content" data-aos="zoom-in-up">
+              <h4 ref={ref}>{countUp}K+</h4>
 
               <div className="persons">
                 {persons?.map((e: any, i: number) => {
