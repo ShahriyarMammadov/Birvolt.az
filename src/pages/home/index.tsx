@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import useTriggeredCountUp from "../../components/triggerCountUp";
+import Statistics from "../../components/statistics";
+import AboutUs from "../../components/aboutUs";
 
 const persons = [
   {
@@ -22,9 +24,12 @@ const persons = [
 ];
 
 const HomePage: React.FC = () => {
+  const ref = useRef(null);
+
   useEffect(() => {
     AOS.init({
       duration: 1500,
+      once: true,
     });
 
     window.addEventListener("resize", () => {
@@ -37,8 +42,6 @@ const HomePage: React.FC = () => {
       });
     };
   }, []);
-
-  const ref = useRef(null);
 
   const countUp = useTriggeredCountUp(ref, 250, 4000);
 
@@ -54,12 +57,12 @@ const HomePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="right">
-            <div className="hero" data-aos="fade-up" data-aos-duration="1000">
+          <div className="right" data-aos="zoom-in-up">
+            <div className="hero" data-aos="fade-up">
               <img src={chargeImage} alt="birvolt" />
             </div>
 
-            <div className="right_content" data-aos="zoom-in-up">
+            <div className="right_content">
               <h4 ref={ref}>{countUp}K+</h4>
 
               <div className="persons">
@@ -82,6 +85,12 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="section2">
+        <Statistics />
+
+        <AboutUs />
       </section>
     </div>
   );

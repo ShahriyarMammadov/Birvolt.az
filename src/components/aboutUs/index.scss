@@ -1,0 +1,135 @@
+#aboutUs {
+    font-family: "Poppins", serif;
+    padding: 0px 15px 150px 15px;
+    color: white;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+
+        .left {
+            position: relative;
+            width: 50%;
+
+            img {
+                border-radius: 15px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                object-fit: cover;
+                margin-top: 50px;
+
+                &.hero1 {
+                    --f: .2;
+                    --r: 10px;
+                    --_f: calc(10%*var(--f)/(1 + var(--f)));
+                    --_a: calc(60deg*var(--f));
+                    width: 450px;
+                    aspect-ratio: calc(0.7 + var(--f));
+                    object-fit: cover;
+                    clip-path: inset(0 var(--_f) 0 0 round var(--r));
+                    transform: perspective(600px) var(--_t, rotateY(var(--_a)));
+                    transition: .5s;
+
+                    &:hover {
+                        clip-path: inset(0 0 0 var(--_f) round var(--r));
+                        --_t: translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+                    }
+                }
+
+                &.hero2 {
+                    position: absolute;
+                    left: 220px;
+                    bottom: 0;
+                    width: 350px;
+                    z-index: 2;
+                    border-radius: 10px;
+                    transform:
+                        perspective(400px) rotateY(-15deg) translateY(50px) rotateX(0deg) scale(1);
+                }
+            }
+
+            .experience-badge {
+                background-color: var(--green-color);
+                width: fit-content;
+                padding: 15px 40px;
+                border-radius: 20px;
+                position: absolute;
+                right: 0;
+                z-index: 20;
+                text-align: center;
+                margin-top: 20px;
+
+                h2 {
+                    font-weight: 500;
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+
+            h1 {
+                font-size: 50px;
+                font-weight: 500;
+                line-height: 60px;
+            }
+
+            .description {
+                font-size: 14px;
+                margin-top: 20px;
+            }
+
+            .cards {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                margin-top: 50px;
+
+                .card {
+                    padding: 20px 20px 35px 20px;
+                    border: 1px solid var(--green-color);
+                    border-radius: 20px;
+                    position: relative;
+                    box-shadow: #379ac4 0px -150px 120px -50px inset;
+
+                    &.secondCard {
+                        border: none;
+                        box-shadow: #379ac44c 0px -200px 90px -50px inset;
+                    }
+
+                    .icon {
+                        width: 48px;
+                        border-radius: 50%;
+                        padding: 10px;
+                        text-align: center;
+                        border: 1px solid var(--green-color);
+
+                        img {
+                            width: 40px;
+                        }
+                    }
+
+                    .head {
+                        margin-top: 20px;
+
+                        h3 {
+                            font-size: 30px;
+                            font-weight: 500;
+                            line-height: 40px;
+                        }
+                    }
+
+                    .desc {
+                        p {
+                            font-size: 14px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
