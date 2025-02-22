@@ -7,6 +7,8 @@ import AOS from "aos";
 import useTriggeredCountUp from "../../components/triggerCountUp";
 import Statistics from "../../components/statistics";
 import AboutUs from "../../components/aboutUs";
+import Section3 from "../../components/section3";
+import Carousel from "../../components/carousel";
 
 const persons = [
   {
@@ -92,6 +94,14 @@ const HomePage: React.FC = () => {
 
         <AboutUs />
       </section>
+
+      <section id="section3">
+        <Section3 />
+      </section>
+
+      <div className="carousel">
+        <Carousel />
+      </div>
     </div>
   );
 };
