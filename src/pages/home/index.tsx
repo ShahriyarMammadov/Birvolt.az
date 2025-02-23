@@ -10,6 +10,8 @@ import AboutUs from "../../components/aboutUs";
 import Section3 from "../../components/section3";
 import Carousel from "../../components/carousel";
 import Section4 from "../../components/section4";
+import Section5 from "../../components/section5";
+import Section6 from "../../components/section6";
 
 const persons = [
   {
@@ -106,6 +108,14 @@ const HomePage: React.FC = () => {
 
       <section id="section4">
         <Section4 />
+      </section>
+
+      <section id="section5">
+        <Section5 />
+      </section>
+
+      <section id="section6">
+        <Section6 />
       </section>
     </div>
   );

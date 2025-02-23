@@ -77,15 +77,16 @@
                 }
 
                 .service-content {
-                    margin-top: 2rem;
+                    margin-top: 25px;
 
                     h3 {
-                        font-size: 1.5rem;
-                        margin-bottom: 1rem;
+                        font-size: 28px;
+                        margin-bottom: 10px;
+                        font-weight: 500;
                     }
 
                     p {
-                        font-size: 1rem;
+                        font-size: 13px;
                         color: #ccc;
                     }
                 }
@@ -97,8 +98,9 @@
                         .arrow {
                             left: auto;
                             right: 100%;
-                            transform: scaleX(-1);
+                            // transform: scaleX(-1);
                             top: 30px;
+                            transform: rotateY(3.142rad);
                         }
                     }
                 }

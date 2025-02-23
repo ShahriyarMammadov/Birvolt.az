@@ -28,7 +28,7 @@ const Section4 = () => {
               </div>
 
               <div className="service-content">
-                <h3>Building services</h3>
+                <h3>Building Services</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
@@ -44,7 +44,7 @@ const Section4 = () => {
               </div>
 
               <div className="service-content">
-                <h3>Building services</h3>
+                <h3>Home Charging</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
@@ -66,7 +66,7 @@ const Section4 = () => {
               </div>
 
               <div className="service-content">
-                <h3>Building services</h3>
+                <h3>AC Charger Service</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
@@ -82,7 +82,7 @@ const Section4 = () => {
               </div>
 
               <div className="service-content">
-                <h3>Building services</h3>
+                <h3>DC Charger Service</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus

@@ -1,0 +1,52 @@
+#section6Component {
+    font-family: "Poppins", serif;
+    padding: 60px 15px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.2)),
+        url('../../assets/section6_hero1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        color: white;
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .left {
+                width: 60%;
+
+                .ourService {
+                    color: var(--green-color);
+                    margin-bottom: 15px;
+                    margin-top: 0px;
+                }
+
+                h1 {
+                    font-size: 55px;
+                    font-weight: 500;
+                    line-height: 70px;
+                }
+
+                .description {
+                    font-size: 15px;
+                    margin-top: 20px;
+                }
+            }
+
+            .right {
+                width: 40%;
+
+                img {
+                    z-index: 2;
+                    width: 100%;
+                    transform: rotate(-15deg);
+                }
+            }
+        }
+    }
+}

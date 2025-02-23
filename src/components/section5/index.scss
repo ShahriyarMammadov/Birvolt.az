@@ -1,0 +1,117 @@
+#section5Component {
+    font-family: "Poppins", serif;
+    padding: 0px 15px 120px 15px;
+    color: white;
+
+    .container {
+
+        .head {
+            margin-bottom: 20px;
+
+            p {
+                font-size: 15px;
+
+                &.ourService {
+                    color: var(--green-color);
+                    margin-bottom: 15px;
+                    margin-top: 0px;
+                }
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 500;
+            }
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    max-width: 60%;
+                    font-size: 14px;
+                }
+
+                .btn {
+                    padding: 20px 0px;
+
+                    a {
+                        padding: 15px 30px;
+                        color: white;
+                        background-color: var(--green-color);
+                        border-radius: 50px;
+                        font-size: 14px;
+                        transition: all 0.5s;
+                        text-decoration: none;
+                        border: 1px solid transparent;
+
+                        &:hover {
+                            border: 1px solid white;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 30px;
+
+            .left {
+                width: 46%;
+
+                img {
+                    width: 100%;
+                    border-radius: 30px;
+                }
+            }
+
+            .right {
+                width: 54%;
+
+                .cards {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    .card {
+                        padding: 30px 20px 40px 20px;
+                        border: 1px solid var(--green-color);
+                        border-radius: 20px;
+                        box-shadow: #6eae2f 0px -150px 120px -50px inset;
+
+                        &.secondCard {
+                            border: none;
+                            background-color: #379ac464;
+                        }
+
+                        .headText {
+                            font-size: 15px;
+                        }
+
+                        .head {
+                            margin-top: 20px;
+
+                            h3 {
+                                font-size: 30px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .desc {
+                            p {
+                                font-size: 15px;
+                                margin-top: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
