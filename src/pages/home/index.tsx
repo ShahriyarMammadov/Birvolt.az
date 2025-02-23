@@ -9,6 +9,7 @@ import Statistics from "../../components/statistics";
 import AboutUs from "../../components/aboutUs";
 import Section3 from "../../components/section3";
 import Carousel from "../../components/carousel";
+import Section4 from "../../components/section4";
 
 const persons = [
   {
@@ -102,6 +103,10 @@ const HomePage: React.FC = () => {
       <div className="carousel">
         <Carousel />
       </div>
+
+      <section id="section4">
+        <Section4 />
+      </section>
     </div>
   );
 };

@@ -1,0 +1,108 @@
+#section4Component {
+    font-family: "Poppins", serif;
+    padding: 0px 15px 120px 15px;
+    color: white;
+
+    .container {
+        .head {
+            text-align: center;
+            margin-bottom: 20px;
+
+            p {
+                font-size: 15px;
+                margin-top: 15px;
+
+                &.ourService {
+                    color: var(--green-color);
+                    margin-bottom: 15px;
+                    margin-top: 0px;
+                }
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 500;
+            }
+        }
+
+        .content {
+            display: flex;
+            margin-top: 50px;
+            position: relative;
+
+            .left {
+                width: 33%;
+            }
+
+            .station {
+                width: 33%;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .right {
+                width: 33%;
+            }
+
+            .service-card {
+                color: white;
+                padding: 2rem;
+                border-radius: 12px;
+                width: 300px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                position: relative;
+
+                .icon-container {
+                    position: relative;
+                    display: inline-block;
+
+                    .icon {
+                        padding: 10px;
+                        border: 1px solid var(--green-color);
+                        border-radius: 50%;
+                        width: 40px;
+                        text-align: center;
+                    }
+
+                    .arrow {
+                        position: absolute;
+                        top: 90px;
+                        left: 100%;
+                        width: 380px;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                .service-content {
+                    margin-top: 2rem;
+
+                    h3 {
+                        font-size: 1.5rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        color: #ccc;
+                    }
+                }
+
+                &.right-card {
+                    text-align: end;
+
+                    .icon-container {
+                        .arrow {
+                            left: auto;
+                            right: 100%;
+                            transform: scaleX(-1);
+                            top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
