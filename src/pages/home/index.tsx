@@ -48,17 +48,18 @@ const HomePage: React.FC = () => {
     };
   }, []);
 
-  const countUp = useTriggeredCountUp(ref, 250, 4000);
+  const countUp = useTriggeredCountUp(ref, 10, 4000);
 
   return (
     <div id="homePage">
       <section id="section1">
         <div className="container">
           <div className="left" data-aos="fade-up">
-            <h1>Eco Friendly For Electric Car</h1>
+            <h1>Elektrik avtomobilləri üçün ekoloji təmiz şarj stansiyaları</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Elektrik avtomobilləri üçün innovativ və ekoloji təmiz şarj
+              stansiyaları, sürətli enerji doldurma və dayanıqlı həllər təklif
+              edir.
             </p>
           </div>
 
@@ -68,6 +69,7 @@ const HomePage: React.FC = () => {
             </div>
 
             <div className="right_content">
+              <p className="userCount">( Birvolt istifadəçiləri )</p>
               <h4 ref={ref}>{countUp}K+</h4>
 
               <div className="persons">
@@ -81,7 +83,7 @@ const HomePage: React.FC = () => {
 
                 <div className="person plus">+</div>
 
-                <p>Let's join us</p>
+                <p>Bizə qoşul</p>
               </div>
 
               <Link to={"/"} className="getStarted">

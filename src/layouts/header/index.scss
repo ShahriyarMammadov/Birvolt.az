@@ -28,9 +28,11 @@ header {
             display: flex;
             align-items: center;
             gap: 30px;
-            background-color: #121d1d;
             padding: 15px 50px;
             border-radius: 50px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(18, 29, 29, 0.5);
 
             a {
                 color: white;
@@ -41,26 +43,44 @@ header {
                     color: var(--green-color);
                 }
             }
-        }
 
-        .contactOur {
-
-            a {
+            @media only screen and (max-width: 850px) {
                 padding: 15px 30px;
-                background-color: #121d1d;
-                color: white;
-                background-color: var(--green-color);
-                border-radius: 50px;
-                font-size: 14px;
-                transition: all 0.5s;
             }
 
-            &:hover {
-                transform: scale(1.1);
+            @media only screen and (max-width: 850px) {
+                display: none;
+            }
+        }
 
+        .rightAction {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            img {
+                width: 22px;
+                cursor: pointer;
+
+                &.menu {
+                    display: none;
+                }
+            }
+
+
+            @media only screen and (max-width: 850px) {
                 a {
-                    border: 1px solid white;
-                    background-color: transparent;
+                    display: none;
+                }
+
+                img {
+                    width: 30px;
+                    cursor: pointer;
+                    display: none;
+
+                    &.menu {
+                        display: inline-block;
+                    }
                 }
             }
         }
