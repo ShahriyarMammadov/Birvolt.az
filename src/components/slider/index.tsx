@@ -18,7 +18,7 @@ const Slider = () => {
 
     const progressInterval = setInterval(() => {
       setProgress((prev) => (prev >= 100 ? 0 : prev + 1));
-    }, 30);
+    }, 40);
 
     return () => {
       clearInterval(interval);
@@ -34,7 +34,15 @@ const Slider = () => {
         style={{
           backgroundImage: `url(${images[currentIndex]})`,
         }}
-      ></div>
+      />
+
+      <div className="text">
+        <h1>Elektrik avtomobilləri üçün ekoloji təmiz şarj stansiyaları.</h1>
+        <p>
+          Elektrik avtomobilləri üçün innovativ və ekoloji təmiz şarj
+          stansiyaları, sürətli enerji doldurma və dayanıqlı həllər təklif edirik.
+        </p>
+      </div>
 
       <div className="progress-bar">
         <div className="progress" style={{ width: `${progress}%` }}></div>

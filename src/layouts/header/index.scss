@@ -57,6 +57,11 @@ header {
             display: flex;
             align-items: center;
             gap: 25px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(18, 29, 29, 0.5);
 
             img {
                 width: 22px;
