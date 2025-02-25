@@ -2,7 +2,6 @@ import React from "react";
 import "./index.scss";
 import { useEffect } from "react";
 import AOS from "aos";
-import Statistics from "../../components/statistics";
 import AboutUs from "../../components/aboutUs";
 import Section3 from "../../components/section3";
 import Carousel from "../../components/carousel";
@@ -10,6 +9,7 @@ import Section4 from "../../components/section4";
 import Section5 from "../../components/section5";
 import Section6 from "../../components/section6";
 import Slider from "../../components/slider";
+import DescriptionCards from "../../components/descriptionCards";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
@@ -36,7 +36,8 @@ const HomePage: React.FC = () => {
       </section>
 
       <section id="section2">
-        <Statistics />
+        {/* <Statistics /> */}
+        <DescriptionCards />
 
         <AboutUs />
       </section>

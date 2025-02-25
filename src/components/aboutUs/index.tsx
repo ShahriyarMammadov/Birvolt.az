@@ -24,7 +24,7 @@ const AboutUs = () => {
         </div>
 
         <div className="right">
-          <h1 data-aos="fade-up">Solutions For All EV Charging Programs!</h1>
+          <h1 data-aos="fade-up">Bütün EV şarj proqramları üçün həllər!</h1>
 
           <p className="description" data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
