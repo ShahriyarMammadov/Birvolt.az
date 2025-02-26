@@ -3,28 +3,29 @@ import section2_card1 from "../../assets/icons/section2_card1.png";
 import section2_card2 from "../../assets/icons/section2_card2.png";
 import section2_card3 from "../../assets/icons/section2_card3.png";
 import section2_card4 from "../../assets/icons/section2_card4.png";
+import arrow_right from "../../assets/icons/arrow-up-right.png";
 
 const DescriptionCards = () => {
   const cards = [
     {
       icon: section2_card1,
       head: "Yüksək keyfiyyətli stansiya",
-      desc: "Practices such as avoiding occupying a charging space longer than necessary, adhering to posted time limits.",
+      desc: "Sürətli, etibarlı və dayanıqlı şarj təcrübəsi üçün yüksək keyfiyyətli stansiyalar.",
     },
     {
       icon: section2_card2,
       head: "Asan Quraşdırma",
-      desc: "Practices such as avoiding occupying a charging space longer than necessary, adhering to posted time limits.",
+      desc: "İstənilən mühitə uyğun sadə və sürətli şarj stansiyası quraşdırılması.",
     },
     {
       icon: section2_card3,
       head: "Şarj aksesuarları",
-      desc: "Practices such as avoiding occupying a charging space longer than necessary, adhering to posted time limits.",
+      desc: "Elektrik avtomobiliniz üçün uyğun və keyfiyyətli şarj aksesuarları.",
     },
     {
       icon: section2_card4,
       head: "Bərpa olunan enerji",
-      desc: "Practices such as avoiding occupying a charging space longer than necessary, adhering to posted time limits.",
+      desc: "Təmiz enerji həlləri ilə ekoloji dostu şarj imkanları.",
     },
   ];
 
@@ -33,15 +34,16 @@ const DescriptionCards = () => {
       <div className="container">
         <div className="head">
           <div className="left">
-            <p>Electric Vehicle</p>
-            <h1>Driving Tomorrow Today: The Electric Evolution</h1>
+            <p data-aos="fade-up">Elektrikli Avtomobillər</p>
+            <h1 data-aos="fade-up">Sabahı Bugündən Sür: Elektrik İnqilabı</h1>
           </div>
 
           <div className="right">
-            <p>
-              Practices such as avoiding occupying a charging space longer than
-              necessary, adhering to posted time limits, and being mindful of
-              charging station etiquette can help ensure.
+            <p data-aos="fade-up">
+              Şarj yerini lazım olduğundan artıq müddətə tutmamaq, təyin olunmuş
+              vaxt limitlərinə riayət etmək və şarj stansiyası etik qaydalarına
+              diqqət yetirmək kimi təcrübələr, hamı üçün daha rahat istifadəni
+              təmin edə bilər.
             </p>
           </div>
         </div>
@@ -50,13 +52,18 @@ const DescriptionCards = () => {
           <div className="cards">
             {cards?.map((e, i) => {
               return (
-                <div className="card" key={i}>
+                <div className="card" key={i} data-aos="fade-up">
                   <div className="icon">
                     <img src={e?.icon} alt="High quality stations" />
                   </div>
 
                   <h2>{e.head}</h2>
                   <p>{e.desc}</p>
+
+                  <div className="arrow">
+                    <p>Daha ətraflı</p>
+                    <img src={arrow_right} alt="read more" />
+                  </div>
                 </div>
               );
             })}
