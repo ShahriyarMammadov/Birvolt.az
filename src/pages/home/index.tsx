@@ -10,6 +10,7 @@ import Section5 from "../../components/section5";
 import Section6 from "../../components/section6";
 import Slider from "../../components/slider";
 import DescriptionCards from "../../components/descriptionCards";
+import ProductsComponent from "../../components/products";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
@@ -40,6 +41,10 @@ const HomePage: React.FC = () => {
         <DescriptionCards />
 
         <AboutUs />
+      </section>
+
+      <section id="productsSection">
+        <ProductsComponent />
       </section>
 
       <section id="section3">
